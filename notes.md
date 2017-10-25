@@ -27,7 +27,7 @@ Choose a port number you prefer.
 
 * Run the following 
 
-`ssh -N -f -L localhost:8888:localhost:8889 h<Username>@<remote server>`
+`ssh -N -f -L localhost:8888:localhost:8889 <Username>@<remote server>`
 
 Sometimes the above gives error, such as
 
@@ -43,7 +43,7 @@ In my case the listener or the local had an IPv6 Ip address.
 
 I solved it by running the following command
 
-`ssh -f hvakade@sjc-ads-1110 -L [::1]:8888:127.0.0.1:8889 -N`
+`ssh -f <Username>@<remote server> -L [::1]:8888:127.0.0.1:8889 -N`
 
 Note 127.0.0.1 points to the `localhost`
 
